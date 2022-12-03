@@ -1,0 +1,496 @@
+/* font-family: 'Abyssinica SIL', serif;
+font-family: 'Alice', serif;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Lemonada', cursive;
+font-family: 'Macondo', cursive;
+font-family: 'Old Standard TT', serif;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Rubik Marker Hatch', cursive;
+font-family: 'Rubik Microbe', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Titillium Web', sans-serif; 
+font-family: 'Delius', cursive;
+*/
+
+/* 00. Animations*/
+@keyframes titleLightAnimation {
+    from {
+        right: 0px;
+        opacity: 0;
+    }
+
+    to {
+        right: 210px;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes titleLightAnimation {
+    from {
+        right: 0px;
+        opacity: 0;
+    } 
+    to{right:210px;
+        opacity: 1;
+    }  
+} 
+
+@-webkit-keyframes titleLightAnimation {
+    from {
+        right: 0px;
+        opacity: 0;
+    } 
+    to{right:210px;
+        opacity: 1;
+    }   
+}
+
+@keyframes titleLightAnimationleave {
+    from {
+        right: 210px;
+        opacity: 1;
+    }
+
+    to {
+        right: 0px;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes titleLightAnimationleave {
+    from {
+        right: 0px;
+        opacity: 0;
+    } 
+    to{right:210px;
+        opacity: 1;
+    }  
+} 
+
+@-webkit-keyframes titleLightAnimationleave {
+    from {
+        right: 0px;
+        opacity: 0;
+    } 
+    to{right:210px;
+        opacity: 1;
+    }   
+}
+
+/* DRAWING */
+
+@keyframes drawing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes drawing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes drawing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes drawingleave {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes drawingleave {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes drawingleave {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* 01. Containers */
+
+body {
+    background-color: rgb(227, 227, 227);
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 25px;
+    padding-top: 150px;
+    padding-left: 180px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 0px;
+}
+
+span {
+    font-size: small;
+    color: gray;
+}
+
+.bigcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    background-image: url(Images/PaperPin.png);
+    background-size: cover;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.right {
+    margin-top: 45px;
+    width: 40%;
+    justify-items: right;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px;
+    width: 80%;
+}
+
+.bottomframe {
+    margin-top: -1px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Pin Drawing */
+
+.drawing {
+    width: 200px;
+    padding-left: 120px;
+    padding-top: 15px;
+    position: absolute;
+    opacity: 0;
+}
+
+.draw03 {
+    position: absolute;
+    height: 220px;
+    margin-top: -30px;
+}
+
+.draw04 {
+    position: absolute;
+    height: 230px;
+    width: 280px;
+    margin-top: -15px;
+    margin-left: -40px;
+}
+
+.drawingtext {
+    font-family: 'Homemade Apple', cursive;
+    position: absolute;
+    margin-left: 250px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.second {
+    margin-top: 80px;
+    margin-left: 290px;
+}
+
+.third {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+    margin-top: 150px;
+    margin-left: 310px;
+    font-size: 21px;
+}
+
+.buy {
+    background-image: url(Images/Button.png);
+    background-size: cover;
+    height: 70px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bold;
+    margin-top: 240px;
+    margin-left: 120px;
+}
+
+
+.buy a {
+    color: rgb(177, 157, 182);
+}
+
+.buy a:hover {
+    color: rgb(105, 53, 119);
+    scale: 120%;
+    transition: 500ms;
+}
+
+.buy a:not(:hover) {
+    scale: 100%;
+    transition: 500ms;
+}
+
+/* END Pin Drawing */
+
+/* Markers Text */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Homemade Apple', cursive;
+    height: 80px;
+}
+
+.title.light {
+    top: 30px;
+    right: 0px;
+    opacity: 0;
+}
+
+.light {
+    width: 350px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 50px;
+}
+
+.title p,
+.title span {
+    margin: 5px;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.66);
+    margin-right: 60px;
+}
+
+/* END Markers Text */
+
+/* INTERACTIONS */
+
+#primarymarkers {
+    position: absolute;
+    top: 60px;
+    left: 1160px;
+    z-index: 1;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+}
+
+#primarymarkers02 {
+    position: absolute;
+    top: 190px;
+    left: 1160px;
+    z-index: 1;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+}
+
+#secondarymarkers {
+    position: absolute;
+    top: 330px;
+    left: 1160px;
+    z-index: 1;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+}
+
+#tertiarymarkers {
+    position: absolute;
+    top: 465px;
+    left: 1160px;
+    z-index: 1;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+}
+
+#primarymarkers:hover~* .title.prim,
+#primarymarkers02:hover~* .title.primb,
+#secondarymarkers:hover~* .title.sec,
+#tertiarymarkers:hover~* .title.tert
+ {
+    animation: titleLightAnimation 1s;
+    -moz-animation: titleLightAnimation 1s;
+    -webkit-animation: titleLightAnimation 1s;
+    animation-fill-mode: forwards;
+}
+
+#primarymarkers:not(:hover)~* .title.prim,
+#primarymarkers02:not(:hover)~* .title.primb,
+#secondarymarkers:not(:hover)~* .title.sec,
+#tertiarymarkers:not(:hover)~* .title.tert
+ {
+    animation: titleLightAnimationleave 1s;
+    -moz-animation: titleLightAnimationleave 1s;
+    -webkit-animation: titleLightAnimationleave 1s;
+}
+
+#primarymarkers:hover~* .draw01,
+#primarymarkers02:hover~* .draw02,
+#secondarymarkers:hover~* .draw03,
+#tertiarymarkers:hover~* .draw04
+ {
+    animation: drawing 1s;
+    -moz-animation: drawing 1s;
+    -webkit-animation: drawing 1s;
+    animation-fill-mode: forwards;
+}
+
+#primarymarkers:not(:hover)~* .draw01,
+#primarymarkers02:not(:hover)~* .draw02,
+#secondarymarkers:not(:hover)~* .draw03,
+#tertiarymarkers:not(:hover)~* .draw04
+ {
+    animation: drawingleave 1s;
+    -moz-animation: drawingleave 1s;
+    -webkit-animation: drawingleave 1s;
+}
+
+/* 02. Marker */
+
+.marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+    /* Arriba-Abajo / Derecha-Izquierda */
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-left: 10px double rgba(0, 0, 0, 75%);
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap,
+.sleeve {
+    display: inline-block;
+}
+
+/* 03. Colours */
+/* Container 01 - PRIMARY COLOURS of light*/
+.red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* If no gradientDirection argument is provided to the linear-gradient function, it arranges colors from top to bottom */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+    /* For a rectangle shadow */
+}
+
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+/* Container 02 - PRIMARY COLOURS of pigments*/
+.yellow {
+    background: linear-gradient(#68680d, yellow, #606c11);
+    box-shadow: 0 0 20px 0 #787e20cc;
+}
+
+.cyan {
+    background: linear-gradient(#0d6868, rgb(0, 255, 255), #115a6c);
+    box-shadow: 0 0 20px 0 #207b7ecc;
+}
+
+.magenta {
+    background: linear-gradient(#680d65, rgb(255, 0, 255), #69116c);
+    box-shadow: 0 0 20px 0 #7e2079cc;
+}
+
+/* Container 03 - SECONDARY COLOURS */
+.orange {
+    background: linear-gradient(#68410d, rgb(255, 127, 0), #6c5511);
+    box-shadow: 0 0 20px 0 #7e5d20cc;
+}
+
+.greenblue {
+    background: linear-gradient(#0d6839, rgb(0, 255, 127), #116c14);
+    box-shadow: 0 0 20px 0 #207e3ccc;
+}
+
+.purple {
+    background: linear-gradient(#560d68, rgb(127, 0, 255), #42116c);
+    box-shadow: 0 0 20px 0 #49207ecc;
+}
+
+/* Container 04 - TERTIARY COLOURS B*/
+.redgreen {
+    background: linear-gradient(#31680d, rgb(127, 255, 0), #656c11);
+    box-shadow: 0 0 20px 0 #4f7e20cc;
+}
+
+.greenblue {
+    background: linear-gradient(#1e0d68, rgb(0, 127, 255), #114c6c);
+    box-shadow: 0 0 20px 0 #20557ecc;
+}
+
+.redblue {
+    background: linear-gradient(#680d1c, rgb(255, 0, 127), #6c1166);
+    box-shadow: 0 0 20px 0 #7e206acc;
+}
