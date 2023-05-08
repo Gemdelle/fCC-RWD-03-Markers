@@ -15,20 +15,24 @@
     from {
         right: 0px;
         opacity: 0;
-    } 
-    to{right:210px;
+    }
+
+    to {
+        right: 210px;
         opacity: 1;
-    }  
-} 
+    }
+}
 
 @-webkit-keyframes titleLightAnimation {
     from {
         right: 0px;
         opacity: 0;
-    } 
-    to{right:210px;
+    }
+
+    to {
+        right: 210px;
         opacity: 1;
-    }   
+    }
 }
 
 @keyframes titleLightAnimationleave {
@@ -47,20 +51,24 @@
     from {
         right: 0px;
         opacity: 0;
-    } 
-    to{right:210px;
+    }
+
+    to {
+        right: 210px;
         opacity: 1;
-    }  
-} 
+    }
+}
 
 @-webkit-keyframes titleLightAnimationleave {
     from {
         right: 0px;
         opacity: 0;
-    } 
-    to{right:210px;
+    }
+
+    to {
+        right: 210px;
         opacity: 1;
-    }   
+    }
 }
 
 /* DRAWING */
@@ -156,6 +164,7 @@ span {
 .bigcontainer {
     display: flex;
     justify-content: space-between;
+    height: 39.4vw;
 }
 
 .left {
@@ -314,8 +323,8 @@ footer {
 
 #primarymarkers02 {
     position: absolute;
-    top: 11.5vw;
-    left: 81vw;
+    top: 10vw;
+    right: 8vw;
     z-index: 1;
     cursor: pointer;
     height: 100px;
@@ -325,8 +334,8 @@ footer {
 
 #secondarymarkers {
     position: absolute;
-    top: 18.5vw;
-    left: 81vw;
+    top: 17vw;
+    right: 8vw;
     z-index: 1;
     cursor: pointer;
     height: 100px;
@@ -336,8 +345,8 @@ footer {
 
 #tertiarymarkers {
     position: absolute;
-    top: 26vw;
-    left: 81vw;
+    top: 24vw;
+    right: 8vw;
     z-index: 1;
     cursor: pointer;
     height: 100px;
@@ -348,8 +357,7 @@ footer {
 #primarymarkers:hover~* .title.prim,
 #primarymarkers02:hover~* .title.primb,
 #secondarymarkers:hover~* .title.sec,
-#tertiarymarkers:hover~* .title.tert
- {
+#tertiarymarkers:hover~* .title.tert {
     animation: titleLightAnimation 1s;
     -moz-animation: titleLightAnimation 1s;
     -webkit-animation: titleLightAnimation 1s;
@@ -359,8 +367,7 @@ footer {
 #primarymarkers:not(:hover)~* .title.prim,
 #primarymarkers02:not(:hover)~* .title.primb,
 #secondarymarkers:not(:hover)~* .title.sec,
-#tertiarymarkers:not(:hover)~* .title.tert
- {
+#tertiarymarkers:not(:hover)~* .title.tert {
     animation: titleLightAnimationleave 1s;
     -moz-animation: titleLightAnimationleave 1s;
     -webkit-animation: titleLightAnimationleave 1s;
@@ -369,8 +376,7 @@ footer {
 #primarymarkers:hover~* .draw01,
 #primarymarkers02:hover~* .draw02,
 #secondarymarkers:hover~* .draw03,
-#tertiarymarkers:hover~* .draw04
- {
+#tertiarymarkers:hover~* .draw04 {
     animation: drawing 1s;
     -moz-animation: drawing 1s;
     -webkit-animation: drawing 1s;
@@ -380,8 +386,7 @@ footer {
 #primarymarkers:not(:hover)~* .draw01,
 #primarymarkers02:not(:hover)~* .draw02,
 #secondarymarkers:not(:hover)~* .draw03,
-#tertiarymarkers:not(:hover)~* .draw04
- {
+#tertiarymarkers:not(:hover)~* .draw04 {
     animation: drawingleave 1s;
     -moz-animation: drawingleave 1s;
     -webkit-animation: drawingleave 1s;
