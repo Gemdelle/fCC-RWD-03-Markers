@@ -153,7 +153,13 @@ h1 {
 }
 
 footer {
-    margin-top: 0px;
+    position: absolute;
+    height: 20vh;
+    width: 100vw;
+    background-image: url(Images/BottomFrame.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 span {
@@ -186,17 +192,6 @@ span {
     justify-content: flex-end;
     padding: 10px 0px;
     width: 80%;
-}
-
-footer {
-    position: absolute;
-    margin-top: 16vh;
-    height: 20vh;
-    width: 100vw;
-    background-image: url(Images/BottomFrame.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /* Pin Drawing */
