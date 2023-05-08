@@ -1,22 +1,3 @@
-/* font-family: 'Abyssinica SIL', serif;
-font-family: 'Alice', serif;
-font-family: 'Berkshire Swash', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Great Vibes', cursive;
-font-family: 'IBM Plex Serif', serif;
-font-family: 'Lemonada', cursive;
-font-family: 'Macondo', cursive;
-font-family: 'Old Standard TT', serif;
-font-family: 'Pinyon Script', cursive;
-font-family: 'Rubik Marker Hatch', cursive;
-font-family: 'Rubik Microbe', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Tangerine', cursive;
-font-family: 'Titillium Web', sans-serif; 
-font-family: 'Delius', cursive;
-*/
-
 /* 00. Animations*/
 @keyframes titleLightAnimation {
     from {
@@ -152,14 +133,15 @@ body {
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
     font-family: 'Homemade Apple', cursive;
     font-size: 25px;
-    padding-top: 150px;
-    padding-left: 180px;
-    margin-bottom: 10px;
+    margin-left: 15vw;
+    margin-top: 11vw;
+    margin-bottom: 1vw;
 }
 
 footer {
@@ -197,10 +179,15 @@ span {
     width: 80%;
 }
 
-.bottomframe {
-    margin-top: -1px;
-    height: 100%;
-    width: 100%;
+footer {
+    position: absolute;
+    margin-top: 16vh;
+    height: 20vh;
+    width: 100vw;
+    background-image: url(Images/BottomFrame.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Pin Drawing */
@@ -316,8 +303,8 @@ span {
 
 #primarymarkers {
     position: absolute;
-    top: 60px;
-    left: 1160px;
+    top: 4.2vw;
+    left: 81vw;
     z-index: 1;
     cursor: pointer;
     height: 100px;
@@ -327,8 +314,8 @@ span {
 
 #primarymarkers02 {
     position: absolute;
-    top: 190px;
-    left: 1160px;
+    top: 11.5vw;
+    left: 81vw;
     z-index: 1;
     cursor: pointer;
     height: 100px;
@@ -338,8 +325,8 @@ span {
 
 #secondarymarkers {
     position: absolute;
-    top: 330px;
-    left: 1160px;
+    top: 18.5vw;
+    left: 81vw;
     z-index: 1;
     cursor: pointer;
     height: 100px;
@@ -349,8 +336,8 @@ span {
 
 #tertiarymarkers {
     position: absolute;
-    top: 465px;
-    left: 1160px;
+    top: 26vw;
+    left: 81vw;
     z-index: 1;
     cursor: pointer;
     height: 100px;
