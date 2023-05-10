@@ -318,7 +318,7 @@ span {
 
 #primarymarkers02 {
     position: absolute;
-    top: 10vw;
+    top: 11.5vw;
     right: 8vw;
     z-index: 1;
     cursor: pointer;
@@ -329,7 +329,7 @@ span {
 
 #secondarymarkers {
     position: absolute;
-    top: 17vw;
+    top: 18.5vw;
     right: 8vw;
     z-index: 1;
     cursor: pointer;
@@ -340,7 +340,7 @@ span {
 
 #tertiarymarkers {
     position: absolute;
-    top: 24vw;
+    top: 25.5vw;
     right: 8vw;
     z-index: 1;
     cursor: pointer;
